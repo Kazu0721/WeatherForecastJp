@@ -11,11 +11,3 @@ data class ForecastItems(
 )
 
 
-data class CityName(
-    val cityName: String
-)
-
-var cityArticle = mutableListOf<CityName>()
-var article = mutableListOf<ForecastItems>()
-
-

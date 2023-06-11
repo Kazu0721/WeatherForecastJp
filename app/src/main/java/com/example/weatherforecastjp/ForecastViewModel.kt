@@ -1,5 +1,6 @@
 package com.example.weatherforecastjp
 
+import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -31,18 +32,15 @@ class ForecastViewModel : ViewModel() {
 
                         val iconUrl = "https://openweathermap.org/img/w/$icon.png"
 
-                       weather.add(ForecastItems(dates, description, temp, humidity, pressure, iconUrl))
+                        weather.add(ForecastItems(dates, description, temp, humidity, pressure, iconUrl))
 
                     }
                 }
                 val cities = response.city.name
-
-                cityArticle.add(CityName(cities))
-
                 city.value = cities
 
             } catch (e: Exception) {
-
+                Log.d("Response　Data", "debug $e")
             }
         }
     }
