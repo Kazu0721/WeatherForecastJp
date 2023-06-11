@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather Forecast Jp</string>
+    <string name="city_name">City Name</string>
+    <string name="temp">気温: </string>
+    <string name="temp_unit">℃</string>
+    <string name="humidity">湿度: </string>
+    <string name="humidity_unit">% </string>
+    <string name="pressure">気圧: </string>
+    <string name="pressure_unit">hpa</string>
+</resources>
